@@ -7,14 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D55F13F20F9A0BB002C2FEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D55F13E20F9A0BB002C2FEF /* AppDelegate.m */; };
-		0D55F14220F9A0BB002C2FEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D55F14120F9A0BB002C2FEF /* ViewController.m */; };
-		0D55F14520F9A0BB002C2FEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D55F14320F9A0BB002C2FEF /* Main.storyboard */; };
-		0D55F14720F9A0BB002C2FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D55F14620F9A0BB002C2FEF /* Assets.xcassets */; };
-		0D55F14A20F9A0BB002C2FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D55F14820F9A0BB002C2FEF /* LaunchScreen.storyboard */; };
-		0D55F14D20F9A0BB002C2FEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D55F14C20F9A0BB002C2FEF /* main.m */; };
-		0D55F15720F9A0BB002C2FEF /* XClibpwqTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D55F15620F9A0BB002C2FEF /* XClibpwqTests.m */; };
-		0D55F16220F9A0BB002C2FEF /* XClibpwqUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D55F16120F9A0BB002C2FEF /* XClibpwqUITests.m */; };
 		0D55F1BE20F9A183002C2FEF /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 0D55F17120F9A182002C2FEF /* Makefile */; };
 		0D55F1BF20F9A183002C2FEF /* pthread_workqueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 0D55F17220F9A182002C2FEF /* pthread_workqueue.c */; };
 		0D55F1C020F9A183002C2FEF /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0D55F17320F9A182002C2FEF /* README */; };
@@ -78,22 +70,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D55F13A20F9A0BB002C2FEF /* XClibpwq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XClibpwq.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D55F13D20F9A0BB002C2FEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0D55F13E20F9A0BB002C2FEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0D55F14020F9A0BB002C2FEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0D55F14120F9A0BB002C2FEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0D55F14420F9A0BB002C2FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0D55F14620F9A0BB002C2FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D55F14920F9A0BB002C2FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0D55F14B20F9A0BB002C2FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D55F14C20F9A0BB002C2FEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0D55F15220F9A0BB002C2FEF /* XClibpwqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XClibpwqTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D55F15620F9A0BB002C2FEF /* XClibpwqTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XClibpwqTests.m; sourceTree = "<group>"; };
-		0D55F15820F9A0BB002C2FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D55F15D20F9A0BB002C2FEF /* XClibpwqUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XClibpwqUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D55F16120F9A0BB002C2FEF /* XClibpwqUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XClibpwqUITests.m; sourceTree = "<group>"; };
-		0D55F16320F9A0BB002C2FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D55F13A20F9A0BB002C2FEF /* XClibpwq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = XClibpwq.app; path = "/Users/jufanwang/Desktop/github/libpwq/XClibpwq/build/Debug-iphoneos/XClibpwq.app"; sourceTree = "<absolute>"; };
+		0D55F15220F9A0BB002C2FEF /* XClibpwqTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XClibpwqTests.xctest; path = "/Users/jufanwang/Desktop/github/libpwq/XClibpwq/build/Debug-iphoneos/XClibpwqTests.xctest"; sourceTree = "<absolute>"; };
+		0D55F15D20F9A0BB002C2FEF /* XClibpwqUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XClibpwqUITests.xctest; path = "/Users/jufanwang/Desktop/github/libpwq/XClibpwq/build/Debug-iphoneos/XClibpwqUITests.xctest"; sourceTree = "<absolute>"; };
 		0D55F17120F9A182002C2FEF /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		0D55F17220F9A182002C2FEF /* pthread_workqueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pthread_workqueue.c; sourceTree = "<group>"; };
 		0D55F17320F9A182002C2FEF /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
@@ -190,55 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				0D55F16F20F9A167002C2FEF /* libpwq */,
-				0D55F13C20F9A0BB002C2FEF /* XClibpwq */,
-				0D55F15520F9A0BB002C2FEF /* XClibpwqTests */,
-				0D55F16020F9A0BB002C2FEF /* XClibpwqUITests */,
-				0D55F13B20F9A0BB002C2FEF /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		0D55F13B20F9A0BB002C2FEF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0D55F13A20F9A0BB002C2FEF /* XClibpwq.app */,
-				0D55F15220F9A0BB002C2FEF /* XClibpwqTests.xctest */,
-				0D55F15D20F9A0BB002C2FEF /* XClibpwqUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		0D55F13C20F9A0BB002C2FEF /* XClibpwq */ = {
-			isa = PBXGroup;
-			children = (
-				0D55F13D20F9A0BB002C2FEF /* AppDelegate.h */,
-				0D55F13E20F9A0BB002C2FEF /* AppDelegate.m */,
-				0D55F14020F9A0BB002C2FEF /* ViewController.h */,
-				0D55F14120F9A0BB002C2FEF /* ViewController.m */,
-				0D55F14320F9A0BB002C2FEF /* Main.storyboard */,
-				0D55F14620F9A0BB002C2FEF /* Assets.xcassets */,
-				0D55F14820F9A0BB002C2FEF /* LaunchScreen.storyboard */,
-				0D55F14B20F9A0BB002C2FEF /* Info.plist */,
-				0D55F14C20F9A0BB002C2FEF /* main.m */,
-			);
-			path = XClibpwq;
-			sourceTree = "<group>";
-		};
-		0D55F15520F9A0BB002C2FEF /* XClibpwqTests */ = {
-			isa = PBXGroup;
-			children = (
-				0D55F15620F9A0BB002C2FEF /* XClibpwqTests.m */,
-				0D55F15820F9A0BB002C2FEF /* Info.plist */,
-			);
-			path = XClibpwqTests;
-			sourceTree = "<group>";
-		};
-		0D55F16020F9A0BB002C2FEF /* XClibpwqUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0D55F16120F9A0BB002C2FEF /* XClibpwqUITests.m */,
-				0D55F16320F9A0BB002C2FEF /* Info.plist */,
-			);
-			path = XClibpwqUITests;
 			sourceTree = "<group>";
 		};
 		0D55F16F20F9A167002C2FEF /* libpwq */ = {
@@ -511,7 +442,7 @@
 				Base,
 			);
 			mainGroup = 0D55F13120F9A0BB002C2FEF;
-			productRefGroup = 0D55F13B20F9A0BB002C2FEF /* Products */;
+			productRefGroup = 0D55F13120F9A0BB002C2FEF;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -539,10 +470,7 @@
 				0D55F1C320F9A183002C2FEF /* config.h.in in Resources */,
 				0D55F1E820F9A183002C2FEF /* TODO in Resources */,
 				0D55F1D520F9A183002C2FEF /* pthread_workqueue.3 in Resources */,
-				0D55F14A20F9A0BB002C2FEF /* LaunchScreen.storyboard in Resources */,
-				0D55F14720F9A0BB002C2FEF /* Assets.xcassets in Resources */,
 				0D55F1C420F9A183002C2FEF /* BUGS in Resources */,
-				0D55F14520F9A0BB002C2FEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,10 +501,8 @@
 				0D55F1E420F9A183002C2FEF /* thread_info.c in Sources */,
 				0D55F1CC20F9A183002C2FEF /* main.c in Sources */,
 				0D55F1D420F9A183002C2FEF /* test.c in Sources */,
-				0D55F14220F9A0BB002C2FEF /* ViewController.m in Sources */,
 				0D55F1CE20F9A183002C2FEF /* latency.c in Sources */,
 				0D55F1DC20F9A183002C2FEF /* manager.c in Sources */,
-				0D55F14D20F9A0BB002C2FEF /* main.m in Sources */,
 				0D55F1DD20F9A183002C2FEF /* thread_info.c in Sources */,
 				0D55F1CD20F9A183002C2FEF /* Makefile in Sources */,
 				0D55F1DE20F9A183002C2FEF /* thread_rt.c in Sources */,
@@ -588,7 +514,6 @@
 				0D55F1DA20F9A183002C2FEF /* thread_info.c in Sources */,
 				0D55F1E020F9A183002C2FEF /* thread_info.c in Sources */,
 				0D55F1D020F9A183002C2FEF /* dispatch_api.c in Sources */,
-				0D55F13F20F9A0BB002C2FEF /* AppDelegate.m in Sources */,
 				0D55F1E120F9A183002C2FEF /* thread_rt.c in Sources */,
 				0D55F1C720F9A183002C2FEF /* config.inc in Sources */,
 				0D55F1E220F9A183002C2FEF /* manager.c in Sources */,
@@ -607,7 +532,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D55F15720F9A0BB002C2FEF /* XClibpwqTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,7 +539,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D55F16220F9A0BB002C2FEF /* XClibpwqUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,25 +556,6 @@
 			targetProxy = 0D55F15E20F9A0BB002C2FEF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0D55F14320F9A0BB002C2FEF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D55F14420F9A0BB002C2FEF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0D55F14820F9A0BB002C2FEF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D55F14920F9A0BB002C2FEF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0D55F16420F9A0BB002C2FEF /* Debug */ = {

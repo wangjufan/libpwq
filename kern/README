@@ -1,13 +1,21 @@
 Kernel Module Design Notes
 --------------------------
 
+可移植线程工作队列
+
 The purpose of the pwq kernel module is to provide a global load balancing
 mechanism so that multiple pwq-driven processes can coexist on the same
 system. Without this mechanism, each process would attempt to monopolize
 all CPU resources which leads to CPU saturation and increased scheduling
 overhead.
+提供一个 全局的负载均衡机制 是pwq内核模型的目的，
+使多个pwq-driven进程在同一个系统中共存。
+如果不使用pwq内核模型，每个进程都会尝试独占所有的CPU资源，
+这将导致CPU饱和且增加调度负载。
 
 This mechanism could be considered a form of "cooperative multiprocess multithreading", in that the kernel does not forcibly terminate idle threads but provides information to each process to help it determine the size of it's own thread pool.
+协同多进程环境中多线程机制，即内核不强迫终止任何闲置线程，
+而是给管理进程提供信息，让进程决定它自己的线程池大小。
 
 Let's define a few variables: 
 
@@ -15,17 +23,29 @@ Let's define a few variables:
     R0..Rn := requested concurrency level of each processes
     G      := the global concurrency value
 
-The value of P is maintained by the kernel and is updated when processes
-are created or terminated. As part of the pwq initialization code, the
-process will open /dev/pthread_workqueue which registers the process as
-a pwq-driven process and increments the value of P. When the process exits,
-  the descriptor will be closed, causing the kernel to decrement the value of P.
+The value of P is maintained by the kernel
+and is updated when processes are created or terminated.
+As part of the pwq initialization code, the
+process will open /dev/pthread_workqueue
+which registers the process as a pwq-driven process
+and increments the value of P.
+When the process exits,the descriptor will be closed,
+causing the kernel to decrement the value of P.
+
+P值由内核维护，当进程创建或是销毁时进行更新。
 
 Each pwq-driven process computes it's own value of R, which it shares
 with the kernel. It represents the amount of parallel tasks that could 
-be concurrently executed by the process. In terms of libdispatch, it would
-correspond to the number of parallel dispatch queues that are non-empty.
+be concurrently executed by the process.
+In terms of libdispatch, it would correspond to the number of parallel dispatch queues that are non-empty.
+R == 非空并发队列数量  libdispatch
+
+libdispatch queue 分发机制？ 被动的 不是主动分发 猜想
 
 The value of G is computed by the kernel via a regularly scheduled
 task. It takes into account the sum of all R values, along with the total
 number of CPUs, and the empty/non-empty state of each CPU's runqueue.
+G 系统当前运行的任务
+= R ++ CPUs number
+++  empty/non-empty state of each CPU's runqueue
+
